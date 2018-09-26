@@ -38,8 +38,8 @@
     {
       "name": "color",
       "type": "quantize",
-      "domain": [0, 500000000],
-      "range": {"scheme": "blues", "count": 50}
+      "domain": [0, 550000000],
+      "range": {"scheme": "reds", "count": 1000}
     }
   ],
 
@@ -47,7 +47,7 @@
     {
       "fill": "color",
       "orient": "bottom-right",
-      "title": "Amount"
+      "title": "Damage Amount"
     }
   ],
 
@@ -58,7 +58,7 @@
       "encode": {
         "enter": { "tooltip": {"signal": "'State:'+ datum.State_Abv +' Amount:' + format(datum.Amount,',d')"}},
         "update": { "fill": {"scale": "color", "field": "Amount"} },
-        "hover": { "fill": {"value": "red"} }
+        "hover": { "fill": {"value": "blue"} }
       },
       "transform": [
         { "type": "geoshape", "projection": "projection" }
