@@ -10,19 +10,18 @@
 </head>
 <body>
 
-<!-- Container for the visualization -->
+<div id="vis1"></div>
+<script type="text/javascript">
+  var spec = "https://raw.githubusercontent.com/TrippSatt/hw3/master/chloropleth.json";
+  vegaEmbed('#vis1', spec).then(function(result) {
+  }).catch(console.error);
+</script>
+
 <div id="vis"></div>
 <script type="text/javascript">
   var spec = "https://raw.githubusercontent.com/TrippSatt/hw3/master/barchart.json";
   vegaEmbed('#vis', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
-
-<div id="vis1"></div>
-<script type="text/javascript">
-  var spec = "https://raw.githubusercontent.com/TrippSatt/hw3/master/chloropleth.json";
-  vegaEmbed('#vis1', spec).then(function(result) {
   }).catch(console.error);
 </script>
 
